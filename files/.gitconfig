@@ -1,0 +1,17 @@
+[user]
+        name = Alex
+[credential "https://github.com"]
+        helper = !/usr/bin/gh auth git-credential
+[alias]
+        st = status
+        s = status
+        co = checkout
+        cob = checkout -b
+        br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+        save = !git add --all && git commit -m "Quicksave"
+        l = log --pretty=format:\"%C(yellow)%h\\\\ %ad%Cred%d\\\\ %Creset%s%Cblue\\\\ [%cn]\" --decorate --date=short
+        c = commit
+        cm = commit -m
+        cam = commit -am
+[core]
+        editor = nano
